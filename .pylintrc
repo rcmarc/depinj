@@ -1,0 +1,10 @@
+[MESSAGE CONTROL]
+
+disable = C0114, C0115, C0116, C0301, R0903, E1120
+
+# C0114: disable missing module docstring
+# C0301: disable max line check since it is modified by black
+# R0903: too few public methods, this is disabled cause pylint doesn't care if the
+### class is extending another class
+# C0115, C0116: disable docstring check 
+# E1120: disable no value for dependency in function call
