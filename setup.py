@@ -5,7 +5,7 @@ with open("Readme.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="depinj",
-    version="0.1.0",
+    version="0.1.1",
     author="Marcos Carrera",
     author_email="ramoscarrer@gmail.com",
     description="A friendly dependency injection package",

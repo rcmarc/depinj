@@ -16,7 +16,7 @@ class Injector:
         obj_type = args[0][0] if isinstance(args[0], tuple) else args[0]
         if obj_type in self._scopeds:
             raise InjectorError(f"class {obj_type} is already as Scoped")
-        self._singletons[obj_type] = _Instantiable(*args, **kwargs)
+        self._singletons[obj_type] = _Instantiable(*args, **kwargs).get(self)
 
     def get_scoped(self, obj_type):
         """Returns a new instance for the class"""
